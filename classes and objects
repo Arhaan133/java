@@ -1,0 +1,72 @@
+📌 Day 6: Classes & Objects in Java
+✅ 1. Concept Brief
+Class → Blueprint or template for objects
+
+Object → Instance of a class (created using new keyword)
+
+🖋 Defining a Class:
+java
+Copy
+Edit
+class Student {
+    String name;
+    int age;
+
+    void displayInfo() {
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
+}
+🏗 Creating an Object:
+java
+Copy
+Edit
+class Main {
+    public static void main(String[] args) {
+        Student s1 = new Student(); // creating object
+        s1.name = "Arhaan";
+        s1.age = 21;
+        s1.displayInfo();
+    }
+}
+🔹 Points to Remember
+Class name should start with uppercase (by convention)
+
+Objects store their own data
+
+You can create multiple objects from the same class
+
+💻 Example: Multiple Objects
+java
+Copy
+Edit
+class Car {
+    String brand;
+    int year;
+
+    void showDetails() {
+        System.out.println("Brand: " + brand + ", Year: " + year);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Car car1 = new Car();
+        car1.brand = "Tesla";
+        car1.year = 2022;
+
+        Car car2 = new Car();
+        car2.brand = "BMW";
+        car2.year = 2020;
+
+        car1.showDetails();
+        car2.showDetails();
+    }
+}
+
+
+ Interview MCQ
+📌 Q: How many objects can be created from a class in Java?
+A. Only 1
+B. Multiple
+C. Depends on JVM
+✅ Answer: B. Multiple
