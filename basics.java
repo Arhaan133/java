@@ -29,7 +29,6 @@ class PersonalDetails {
 
 
 
-
 //  Day 1: Java Program Structure & Data Types
 // ✅ 1. Concept Brief
 // A simple Java program includes:
